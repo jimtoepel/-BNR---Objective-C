@@ -17,7 +17,14 @@ int main(int argc, const char * argv[]) {
     long secondsInFuture = secondsSince1970 + 40000000;
     printf("For million seconds from now will be: %ld\n", secondsInFuture);
     
+    struct tm future;
+    localtime_r(&secondsInFuture, &future);
+    printf("In 4 million seconds, the time will be: %d:%d:%d\n", future.tm_hour, future.tm_min, future.tm_sec);
     
+    int month = future.tm_mon + 1;
+    int year = future.tm_year + 1900;
+    
+    printf("And the date will be %d-%d-%d\n", month, future.tm_mday, year);
     
     return 0;
 }
