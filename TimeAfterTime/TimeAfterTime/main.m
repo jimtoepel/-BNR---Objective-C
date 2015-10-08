@@ -22,6 +22,9 @@ int main(int argc, const char * argv[]) {
         NSDate *later = [now dateByAddingTimeInterval:100000];
         NSLog(@"In 100,000 seconds it will be %@", later);
         
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSLog(@"My calendar is %@", [cal calendarIdentifier]);
+        
             }
     return 0;
 }
