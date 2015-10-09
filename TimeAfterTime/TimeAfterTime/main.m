@@ -25,6 +25,11 @@ int main(int argc, const char * argv[]) {
         NSCalendar *cal = [NSCalendar currentCalendar];
         NSLog(@"My calendar is %@", [cal calendarIdentifier]);
         
+        unsigned long day = [cal ordinalityOfUnit:NSCalendarUnitDay
+                                           inUnit:NSCalendarUnitMonth
+                                          forDate:now];
+        NSLog(@"This is day %lu of the month", day);
+        
             }
     return 0;
 }
