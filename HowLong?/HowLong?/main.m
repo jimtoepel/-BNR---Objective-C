@@ -20,8 +20,14 @@ int main(int argc, const char * argv[]) {
         [comps setHour:13];
         [comps setMinute:34];
         [comps setSecond:0];
-        NSLog(@"I was born at: %@\n", comps);
-        NSLog(@"And have been alive for: \n");
+        
+        NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        NSDate *dateOfBirth = [g dateFromComponents:comps];
+        NSLog(@"I was born at: %@\n", dateOfBirth);
+        
+        double secondSinceEarlierDate = [now timeIntervalSinceDate:dateOfBirth];
+        
+        NSLog(@"And have been alive for: %f seconds\n", secondSinceEarlierDate);
     }
     return 0;
 }
