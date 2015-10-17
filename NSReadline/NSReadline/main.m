@@ -13,20 +13,26 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         // readline the text entered (Chapter 8)
-        // readline()
-        // atoi()
+        printf("What am I counting down from?");
+        const char *name = readline(NULL);
         
-        // confirm the text entered
-        
+        NSString *nameString = [NSString stringWithUTF8String:name];
+        NSInteger numberInt = [nameString intValue];
         
         // convert that string to a number
+//        int number = atoi(name);
+        
+        // confirm the text entered
+        NSLog(@"Counting down from: %li\n", numberInt);
+        
         
         
         // LOOP
-        // Count down from that number by 3s
-        
-        
-        // Display number
+        for (NSInteger i = numberInt; i > 0; i -= 3) {
+
+            NSLog(@"%li\n", (long)i);
+            
+        }
         
         
     }
