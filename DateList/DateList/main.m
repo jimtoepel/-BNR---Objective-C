@@ -16,9 +16,25 @@ int main(int argc, const char * argv[]) {
         NSDate *tomorrow = [now dateByAddingTimeInterval:24.0 * 60.0 * 60.0];
         NSDate *yesterday = [now dateByAddingTimeInterval:-24.0 * 60.0 * 60.0];
         
-        // Create and array contianing all three!
-        NSArray *dateList = @[now, tomorrow, yesterday];
+        // Create an empty array
+        NSMutableArray *dateList = [NSMutableArray array];
         
+        // Add two dates to the array
+        [dateList addObject:now];
+        [dateList addObject:tomorrow];
+        
+        // Add yesterday at the beginning of the list
+        [dateList insertObject:yesterday atIndex:0];
+        
+        
+        // Iterate over the array, looking for something using Fast enumeration!
+        for (NSDate *d in dateList) {
+            NSLog(@"Here is a date: %@", d);
+        }
+        
+        // Remove yesterday
+        [dateList removeObjectAtIndex:0];
+        NSLog(@"Now the first date is: %@", dateList[0]);
         
     }
     return 0;
