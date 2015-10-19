@@ -30,7 +30,8 @@ int main(int argc, const char * argv[]) {
         for (NSString *name in namesArray) {
             for (NSString *word in wordsArray) {
                 if ([[name lowercaseString] compare:word] == NSOrderedSame) {
-                    [namesAndWords addObject:name];
+
+                
                 }
             }
         }
