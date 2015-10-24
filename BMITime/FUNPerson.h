@@ -10,19 +10,9 @@
 
 @interface FUNPerson : NSObject
 
-{
-    // FUNPerson had two instance variables
-    float _heightInMeters;
-    int _weightInKilos;
-    
-}
+@property (nonatomic) float heightInMeters;
+@property (nonatomic) int weightInKilos;
 
-// FUNPerson had methods to read and set its instance variables
-
--(float)heightInMeters;
--(void)setHeightInMeters:(float)h;
--(int)weightInKilos;
--(void)setWeightInKilos:(int)w;
 
 // FUNPerson has a built in method that calculated BMI
 
