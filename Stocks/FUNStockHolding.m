@@ -9,37 +9,20 @@
 #import "FUNStockHolding.h"
 
 @implementation FUNStockHolding
-
-- (void) setCurrentSharePrice:(float)c {
-    
-    _currentSharePrice = c;
-    
-}
-
-
-- (void) setPurchaseSharePrice:(float)p {
-    
-    _purchaseSharePrice = p;
-    
-}
-
-
-- (void) setNumberOfShares:(int)n {
-    
-    _numberOfShares = n;
-    
-}
+@synthesize purchaseSharePrice;
+@synthesize numberOfShares;
+@synthesize currentSharePrice;
 
 
 - (float) costInDollars {
 
-    return _purchaseSharePrice * _numberOfShares;
+    return purchaseSharePrice * numberOfShares;
 
 }
 
 -(float) valueInDollars {
     
-    return _currentSharePrice * _numberOfShares;
+    return currentSharePrice * numberOfShares;
 
 }
 

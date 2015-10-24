@@ -10,16 +10,11 @@
 
 @interface FUNStockHolding : NSObject
 
-{
-    float   _purchaseSharePrice;
-    float   _currentSharePrice;
-    int     _numberOfShares;
-}
+@property (nonatomic) float purchaseSharePrice;
+@property (nonatomic) float currentSharePrice;
+@property (nonatomic) int numberOfShares;
 
 -(float)costInDollars;
 -(float)valueInDollars;
--(void)setNumberOfShares:(int)n;
--(void)setPurchaseSharePrice:(float)p;
--(void)setCurrentSharePrice:(float)c;
 
 @end
