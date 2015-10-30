@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10C7B5E1BE41D2200E3EDCE /* FUNEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = B10C7B5D1BE41D2200E3EDCE /* FUNEmployee.m */; };
 		B1AC56A61BD46FFA002640AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC56A51BD46FFA002640AB /* main.m */; };
-		B1AC56AE1BD47087002640AB /* FUNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC56AD1BD47087002640AB /* FUNPerson.m */; settings = {ASSET_TAGS = (); }; };
+		B1AC56AE1BD47087002640AB /* FUNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC56AD1BD47087002640AB /* FUNPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B10C7B5C1BE41D2200E3EDCE /* FUNEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNEmployee.h; sourceTree = "<group>"; };
+		B10C7B5D1BE41D2200E3EDCE /* FUNEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNEmployee.m; sourceTree = "<group>"; };
 		B1AC56A21BD46FFA002640AB /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1AC56A51BD46FFA002640AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1AC56AC1BD47087002640AB /* FUNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNPerson.h; sourceTree = "<group>"; };
@@ -46,6 +49,8 @@
 			children = (
 				B1AC56AC1BD47087002640AB /* FUNPerson.h */,
 				B1AC56AD1BD47087002640AB /* FUNPerson.m */,
+				B10C7B5C1BE41D2200E3EDCE /* FUNEmployee.h */,
+				B10C7B5D1BE41D2200E3EDCE /* FUNEmployee.m */,
 				B1AC56A41BD46FFA002640AB /* BMITime */,
 				B1AC56A31BD46FFA002640AB /* Products */,
 			);
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1AC56AE1BD47087002640AB /* FUNPerson.m in Sources */,
+				B10C7B5E1BE41D2200E3EDCE /* FUNEmployee.m in Sources */,
 				B1AC56A61BD46FFA002640AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +247,7 @@
 				B1AC56AB1BD46FFA002640AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
