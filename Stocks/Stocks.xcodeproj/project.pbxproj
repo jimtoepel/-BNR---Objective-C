@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B10B6E4B1BD732B40004FB5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10B6E4A1BD732B40004FB5E /* main.m */; };
-		B10B6E531BD732F00004FB5E /* FUNStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B10B6E521BD732F00004FB5E /* FUNStockHolding.m */; settings = {ASSET_TAGS = (); }; };
+		B10B6E531BD732F00004FB5E /* FUNStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B10B6E521BD732F00004FB5E /* FUNStockHolding.m */; };
+		B147203A1BE6C68C0049B66E /* FUNForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B14720391BE6C68C0049B66E /* FUNForeignStockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B10B6E4A1BD732B40004FB5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B10B6E511BD732F00004FB5E /* FUNStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNStockHolding.h; sourceTree = "<group>"; };
 		B10B6E521BD732F00004FB5E /* FUNStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNStockHolding.m; sourceTree = "<group>"; };
+		B14720381BE6C68C0049B66E /* FUNForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNForeignStockHolding.h; sourceTree = "<group>"; };
+		B14720391BE6C68C0049B66E /* FUNForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNForeignStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 			children = (
 				B10B6E511BD732F00004FB5E /* FUNStockHolding.h */,
 				B10B6E521BD732F00004FB5E /* FUNStockHolding.m */,
+				B14720381BE6C68C0049B66E /* FUNForeignStockHolding.h */,
+				B14720391BE6C68C0049B66E /* FUNForeignStockHolding.m */,
 				B10B6E491BD732B40004FB5E /* Stocks */,
 				B10B6E481BD732B40004FB5E /* Products */,
 			);
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10B6E531BD732F00004FB5E /* FUNStockHolding.m in Sources */,
+				B147203A1BE6C68C0049B66E /* FUNForeignStockHolding.m in Sources */,
 				B10B6E4B1BD732B40004FB5E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +247,7 @@
 				B10B6E501BD732B40004FB5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

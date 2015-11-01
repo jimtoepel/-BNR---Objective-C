@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FUNStockHolding.h"
+#import "FUNForeignStockHolding.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -33,9 +34,16 @@ int main(int argc, const char * argv[]) {
         stock3.currentSharePrice = 49.51;
         [holdings addObject:stock3];
         
+        FUNForeignStockHolding *stock4 = [[FUNForeignStockHolding alloc] init];
+        stock4.numberOfShares = 100;
+        stock4.purchaseSharePrice = 25.00;
+        stock4.currentSharePrice = 50.00;
+        stock4.conversionRate = .75;
+        [holdings addObject:stock4];
+        
         // Iterate over the array
         for(FUNStockHolding *number in holdings) {
-            NSLog(@"The stock is worth: %f\n", [number currentSharePrice]);
+            NSLog(@"The stock is worth: %f\n", [number valueInDollars]);
 
         }
         
