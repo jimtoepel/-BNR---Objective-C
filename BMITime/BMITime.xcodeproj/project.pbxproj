@@ -10,6 +10,7 @@
 		B10C7B5E1BE41D2200E3EDCE /* FUNEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = B10C7B5D1BE41D2200E3EDCE /* FUNEmployee.m */; };
 		B1AC56A61BD46FFA002640AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC56A51BD46FFA002640AB /* main.m */; };
 		B1AC56AE1BD47087002640AB /* FUNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC56AD1BD47087002640AB /* FUNPerson.m */; };
+		B1CF59331BE883EC004AB3E0 /* FUNAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CF59321BE883EC004AB3E0 /* FUNAsset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		B1AC56A51BD46FFA002640AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1AC56AC1BD47087002640AB /* FUNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNPerson.h; sourceTree = "<group>"; };
 		B1AC56AD1BD47087002640AB /* FUNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNPerson.m; sourceTree = "<group>"; };
+		B1CF59311BE883EC004AB3E0 /* FUNAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNAsset.h; sourceTree = "<group>"; };
+		B1CF59321BE883EC004AB3E0 /* FUNAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNAsset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,8 @@
 		B1AC56991BD46FFA002640AB = {
 			isa = PBXGroup;
 			children = (
+				B1CF59311BE883EC004AB3E0 /* FUNAsset.h */,
+				B1CF59321BE883EC004AB3E0 /* FUNAsset.m */,
 				B1AC56AC1BD47087002640AB /* FUNPerson.h */,
 				B1AC56AD1BD47087002640AB /* FUNPerson.m */,
 				B10C7B5C1BE41D2200E3EDCE /* FUNEmployee.h */,
@@ -130,6 +135,7 @@
 			files = (
 				B1AC56AE1BD47087002640AB /* FUNPerson.m in Sources */,
 				B10C7B5E1BE41D2200E3EDCE /* FUNEmployee.m in Sources */,
+				B1CF59331BE883EC004AB3E0 /* FUNAsset.m in Sources */,
 				B1AC56A61BD46FFA002640AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
