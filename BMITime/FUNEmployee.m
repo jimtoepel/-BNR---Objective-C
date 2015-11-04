@@ -7,8 +7,46 @@
 //
 
 #import "FUNEmployee.h"
+#import "FUNAsset.h"
 
 @implementation FUNEmployee
+
+
+// Accessors for assets properties
+- (void)setAssets:(NSArray *)a
+{
+    _assets = [a mutableCopy];
+}
+
+
+- (NSArray *)assets
+{
+    return [_assets copy];
+}
+
+
+- (void)addAsset:(FUNAsset *)a
+{
+    // is assets nil?
+    if (!_assets) {
+        
+        //Create the array
+        _assets = [[NSMutableArray alloc] init];
+    }
+    [_assets addObject:a];
+}
+
+- (unsigned int)valueOfAssets
+{
+    // Sum up the resale value of the assets
+    unsigned int sum = 0;
+    for (FUNAsset *a in _assets) {
+        sum += [a resaleValue];
+    }
+    return sum;
+}
+
+
 
 -(double)yearsOfEmployment
 {
@@ -33,9 +71,13 @@
 
 - (NSString *) description
 {
-    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
+    return [NSString stringWithFormat:@"<Employee %d: $%u in assets>", self.employeeID, self.valueOfAssets];
 }
 
 
+- (void)dealloc
+{
+    NSLog(@"deallocating %@", self);
+}
 
 @end
