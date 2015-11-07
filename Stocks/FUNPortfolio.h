@@ -7,9 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+@class FUNStockHolding;
 
 @interface FUNPortfolio : NSObject
+{
+    NSMutableArray *_portfolioStocks;
+}
 
--(float) totalValue;
+@property (nonatomic, copy) NSArray *portfolioStocks;
+
+-(void)addStock:(FUNStockHolding *)a;
+//-(void)removeStock:(FUNStockHolding *)a;
+
+-(float) totalPortfolioValue;
+-(void) displayPortfolio;
 
 @end

@@ -13,6 +13,7 @@
 @property (nonatomic) float purchaseSharePrice;
 @property (nonatomic) float currentSharePrice;
 @property (nonatomic) int numberOfShares;
+@property (nonatomic) NSString *symbol;
 
 -(float)costInDollars;
 -(float)valueInDollars;

@@ -7,12 +7,45 @@
 //
 
 #import "FUNPortfolio.h"
+#import "FUNStockHolding.h"
 
 @implementation FUNPortfolio
 
--(float)totalValue
+- (NSArray *)portfolioStocks
 {
-    return 0;
+    return [_portfolioStocks copy];
 }
+
+- (void)addStock:(FUNStockHolding *)a
+{
+    // is StocksNill?
+    if (!_portfolioStocks) {
+        
+        // create the array
+        _portfolioStocks = [[NSMutableArray alloc] init];
+        
+    }
+    [_portfolioStocks addObject:a];
+}
+
+
+-(void)displayPortfolio
+{
+    for (FUNStockHolding *a in _portfolioStocks){
+        NSLog(@"Symbol %@:%.2f", [a symbol], [a valueInDollars]);
+    }
+}
+
+
+-(float)totalPortfolioValue
+{
+    float sum = 0;
+    for (FUNStockHolding *a in _portfolioStocks){
+        sum += [a valueInDollars];
+    }
+    return sum;
+}
+
+
 
 @end
