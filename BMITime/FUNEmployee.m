@@ -36,6 +36,11 @@
     [_assets addObject:a];
 }
 
+-( void)removeAsset:(FUNAsset *)a
+{
+    
+}
+
 - (unsigned int)valueOfAssets
 {
     // Sum up the resale value of the assets

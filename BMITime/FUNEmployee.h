@@ -23,6 +23,7 @@
 
 -(double)yearsOfEmployment;
 -(void)addAsset:(FUNAsset *)a;
+-(void)removeAsset:(FUNAsset *)a;
 -(unsigned int)valueOfAssets;
 
 
