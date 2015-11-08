@@ -56,6 +56,13 @@ int main(int argc, const char * argv[]) {
         
         [employees removeObjectAtIndex:5];
         
+        for (FUNEmployee *a in employees)
+        {
+            [a removeAsset:0];
+        }
+        
+        NSLog(@"Employees: %@", employees);
+        
         NSLog(@"Giving Up ownership of arrays");
         
         employees = nil;

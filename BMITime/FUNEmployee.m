@@ -36,10 +36,12 @@
     [_assets addObject:a];
 }
 
--( void)removeAsset:(FUNAsset *)a
+
+-( void)removeAsset:(FUNAsset * )a
 {
-    
+    [_assets removeObjectAtIndex:a];
 }
+
 
 - (unsigned int)valueOfAssets
 {
