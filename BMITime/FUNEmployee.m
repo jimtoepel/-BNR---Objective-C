@@ -9,6 +9,17 @@
 #import "FUNEmployee.h"
 #import "FUNAsset.h"
 
+// A Class extension
+@interface FUNEmployee ()
+{
+    NSMutableArray *_assets;
+}
+
+@property (nonatomic) unsigned int officeAlarmCode;
+
+@end
+
+
 @implementation FUNEmployee
 
 
