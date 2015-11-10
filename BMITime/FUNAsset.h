@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class FUNEmployee;
 
 @interface FUNAsset : NSObject
 
 @property (nonatomic, copy) NSString *label;
+@property (nonatomic) FUNEmployee *holder;
 @property (nonatomic) unsigned int resaleValue;
 
 @end

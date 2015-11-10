@@ -7,12 +7,18 @@
 //
 
 #import "FUNAsset.h"
+#import "FUNEmployee.h"
 
 @implementation FUNAsset
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: $%u>", self.label, self.resaleValue];
+    // Is holder nil?
+    if (self.holder) {
+        return  [NSString stringWithFormat:@"<%@: $%d, assignned to %@>", self.label, self.resaleValue, self.holder];
+    } else {
+        return [NSString stringWithFormat:@"<%@: $%d unassigned>", self.label, self.resaleValue];
+    }
 }
 
 
