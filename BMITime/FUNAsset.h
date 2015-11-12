@@ -12,7 +12,7 @@
 @interface FUNAsset : NSObject
 
 @property (nonatomic, copy) NSString *label;
-@property (nonatomic) FUNEmployee *holder;
+@property (nonatomic, weak) FUNEmployee *holder;
 @property (nonatomic) unsigned int resaleValue;
 
 @end
