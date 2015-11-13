@@ -12,7 +12,7 @@
 // A Class extension
 @interface FUNEmployee ()
 {
-    NSMutableArray *_assets;
+    NSMutableSet *_assets;
 }
 
 @property (nonatomic) unsigned int officeAlarmCode;
@@ -42,18 +42,19 @@
     if (!_assets) {
         
         //Create the array
-        _assets = [[NSMutableArray alloc] init];
+        _assets = [[NSMutableSet alloc] init];
     }
     [_assets addObject:a];
     a.holder = self;
 }
 
 
--( void)removeAsset:(FUNAsset * )a
+/*
+ -( void)removeAsset:(FUNAsset * )a
 {
     [_assets removeObjectAtIndex:a];
 }
-
+*/
 
 - (unsigned int)valueOfAssets
 {

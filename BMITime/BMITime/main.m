@@ -61,11 +61,13 @@ int main(int argc, const char * argv[]) {
         [employees removeObjectAtIndex:5];
         
         NSLog(@"allAssets: %@", allAssets);
-        
+
+        /*
         for (FUNEmployee *a in employees)
         {
             [a removeAsset:0];
         }
+        */
         
         NSLog(@"Employees: %@", employees);
         
