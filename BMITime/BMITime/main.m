@@ -16,6 +16,9 @@ int main(int argc, const char * argv[]) {
         // Create and array of FUNEmployee Objects
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
+        // Create a dictionary of executives
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
+        
         for (int i = 0; i < 10; i++) {
             // Create an instance of FUN Employee
             FUNEmployee *mikey = [[FUNEmployee alloc] init];
@@ -27,6 +30,16 @@ int main(int argc, const char * argv[]) {
             
             // put the employee in the employees array
             [employees addObject:mikey];
+            
+            // Is this the first employee?
+            if (i ==0) {
+                [executives setObject:mikey forKey:@"CEO"];
+            }
+            
+            // Is this the second employee?
+            if (i == 1) {
+                [executives setObject:mikey forKey:@"CTO"];
+            }
         }
         
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
@@ -54,6 +67,11 @@ int main(int argc, const char * argv[]) {
         
         }
         
+        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets"
+                                                              ascending:YES];
+        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];
+        [employees sortUsingDescriptors:@[voa, eid]];
+        
         NSLog(@"Employees: %@", employees);
         
         NSLog(@"Giving up ownership of one employee");
@@ -61,6 +79,13 @@ int main(int argc, const char * argv[]) {
         [employees removeObjectAtIndex:5];
         
         NSLog(@"allAssets: %@", allAssets);
+        
+        // Print out the Dictionary
+        NSLog(@"Executives: %@", executives);
+        
+        // Print out the CEO's informaiton
+        NSLog(@"CEO: %@", executives[@"CEO"]);
+        executives = nil;
 
         /*
         for (FUNEmployee *a in employees)
