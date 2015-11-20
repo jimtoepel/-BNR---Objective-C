@@ -21,5 +21,6 @@
 
 -(float) totalPortfolioValue;
 -(void) displayPortfolio;
+-(NSArray *) topHoldings;
 
 @end

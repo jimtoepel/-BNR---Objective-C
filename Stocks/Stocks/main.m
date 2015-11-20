@@ -50,6 +50,8 @@ int main(int argc, const char * argv[]) {
         [holdings displayPortfolio];
         NSLog (@"The stocks are worth:%.2F", [holdings totalPortfolioValue]) ;
         
+        NSLog(@"The top three stocks are: %@", [holdings topHoldings]);
+        
         
     }
     return 0;

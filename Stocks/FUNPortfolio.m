@@ -17,6 +17,8 @@
     return [_portfolioStocks copy];
 }
 
+
+
 - (void)addStock:(FUNStockHolding *)a
 {
     // is StocksNill?
@@ -47,6 +49,10 @@
     return sum;
 }
 
+-(NSArray*)topHoldings
+{
+    return _portfolioStocks;
+}
 
 
 @end
