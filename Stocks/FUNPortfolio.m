@@ -51,8 +51,25 @@
 
 -(NSArray*)topHoldings
 {
-    return _portfolioStocks;
+    NSMutableArray *topThreeHoldings = [_portfolioStocks mutableCopy];
+    // vid value in dollars
+    NSSortDescriptor *vid = [NSSortDescriptor sortDescriptorWithKey:@"valueInDollars"
+                                                          ascending:NO];
+    [topThreeHoldings sortUsingDescriptors:@[vid]];
+    // array of first three
+    NSIndexSet *topThree = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 3)];
+    return [topThreeHoldings objectsAtIndexes:topThree];
+    
 }
 
+-(NSArray *) portfolioByAlphabet
+{
+    NSMutableArray *anAlphabeticalArray = [_portfolioStocks mutableCopy];
+    // sortAlpha to sort alphabetically
+    NSSortDescriptor *sortAlpha = [NSSortDescriptor sortDescriptorWithKey:@"symbol"
+                                                                ascending:YES];
+    [anAlphabeticalArray sortUsingDescriptors:@[sortAlpha]];
+    return anAlphabeticalArray;
+}
 
 @end

@@ -50,7 +50,13 @@ int main(int argc, const char * argv[]) {
         [holdings displayPortfolio];
         NSLog (@"The stocks are worth:%.2F", [holdings totalPortfolioValue]) ;
         
-        NSLog(@"The top three stocks are: %@", [holdings topHoldings]);
+        NSLog(@"The top three stocks are:");
+        NSArray *topThreeholdings = [[NSArray alloc] init];
+        topThreeholdings = [holdings topHoldings];
+        
+        for (FUNStockHolding *astock in topThreeholdings) {
+            NSLog(@"Stock symbol:%@\tTotal Cost:$%.2f\tTotal Value:$%.2f", astock.symbol, astock.costInDollars, astock.valueInDollars);
+        }
         
         
     }
