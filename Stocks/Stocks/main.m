@@ -58,6 +58,14 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Stock symbol:%@\tTotal Cost:$%.2f\tTotal Value:$%.2f", astock.symbol, astock.costInDollars, astock.valueInDollars);
         }
         
+        NSLog(@"The stocks in alphabetical order are:");
+        NSArray *alphaHoldings = [[NSArray alloc] init];
+        alphaHoldings = [holdings portfolioByAlphabet];
+        
+        for (FUNStockHolding *astock in alphaHoldings) {
+            NSLog(@"Stock symbol:%@\t", astock.symbol);
+        }
+        
         
     }
     return 0;
