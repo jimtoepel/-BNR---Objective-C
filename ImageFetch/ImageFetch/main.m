@@ -23,10 +23,10 @@ int main(int argc, const char * argv[]) {
             return 1;
         }
         
-        NSLog(@"The file is %lu bytes", (unsigned long)[data length]);
+        NSLog(@"The file is %lu bytes", [data length]);
         
         BOOL written = [data writeToFile:@"/tmp/google.png"
-                                 options:0
+                                 options:NSDataWritingAtomic
                                    error:&error];
         
         if (!written) {
@@ -35,6 +35,9 @@ int main(int argc, const char * argv[]) {
         }
         
         NSLog(@"Success!");
+        
+        NSData *readData = [NSData dataWithContentsOfFile:@"/tmp/google.png"];
+        NSLog(@"The file read from the disk has %lu bytes", [readData length]);
         
     }
     return 0;
