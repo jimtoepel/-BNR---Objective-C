@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FUNLogger : NSObject
-@property (nonatomic) NSDate  *lastTime;
+@interface FUNLogger : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
+{
+    NSMutableData *_incomingData;
+}
+
+@property (nonatomic) NSDate  *lastTime;
 - (NSString *)lastTimeString;
 - (void)updateLastTime: (NSTimer *)t;
 
