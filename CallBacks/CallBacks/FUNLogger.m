@@ -7,9 +7,16 @@
 //
 
 #import "FUNLogger.h"
+@interface FUNLogger ()
+- (void)zoneChange:(NSNotification *)note;
+@end
 
 @implementation FUNLogger
 
+- (void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"The system time zone has changed");
+}
 
 - (NSString *)lastTimeString
 {
