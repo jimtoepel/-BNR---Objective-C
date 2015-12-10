@@ -14,14 +14,25 @@ int main(int argc, const char * argv[]) {
         
         FUNLogger *logger = [[FUNLogger alloc] init];
         
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:NSSystemTimeZoneDidChangeNotification
+                                                          object:nil
+                                                           queue:nil usingBlock:^(NSNotification *changer) {
+                                                            NSLog(@"The system time zone has changed");
+                                                           }];
+        
+   /*
         [[NSNotificationCenter defaultCenter] addObserver:logger
                                                  selector:@selector(zoneChange:)
                                                      name:NSSystemTimeZoneDidChangeNotification
                                                    object:nil];
+  */
         
         NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
         
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        
+        
         
         __unused NSURLConnection *fetchConn = [[NSURLConnection alloc] initWithRequest:request
                                                                               delegate:logger
