@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1737FBF1C1E3946004F5676 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1737FBE1C1E3946004F5676 /* MyView.m */; };
 		B1F911121C1CEE5300AD47EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911111C1CEE5300AD47EE /* main.m */; };
 		B1F911151C1CEE5300AD47EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911141C1CEE5300AD47EE /* AppDelegate.m */; };
 		B1F911181C1CEE5300AD47EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911171C1CEE5300AD47EE /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1737FBD1C1E3946004F5676 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		B1737FBE1C1E3946004F5676 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		B1F9110D1C1CEE5300AD47EE /* iTahList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTahList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F911111C1CEE5300AD47EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1F911131C1CEE5300AD47EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				B1F911141C1CEE5300AD47EE /* AppDelegate.m */,
 				B1F911161C1CEE5300AD47EE /* ViewController.h */,
 				B1F911171C1CEE5300AD47EE /* ViewController.m */,
+				B1737FBD1C1E3946004F5676 /* MyView.h */,
+				B1737FBE1C1E3946004F5676 /* MyView.m */,
 				B1F9111C1C1CEE5300AD47EE /* Assets.xcassets */,
 				B1F911211C1CEE5300AD47EE /* Info.plist */,
 				B1F911101C1CEE5300AD47EE /* Supporting Files */,
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1737FBF1C1E3946004F5676 /* MyView.m in Sources */,
 				B1F911181C1CEE5300AD47EE /* ViewController.m in Sources */,
 				B1F911151C1CEE5300AD47EE /* AppDelegate.m in Sources */,
 				B1F911121C1CEE5300AD47EE /* main.m in Sources */,
