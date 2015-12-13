@@ -15,8 +15,54 @@
 @implementation AppDelegate
 
 
+#pragma mark - Application delegate callbacks
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // Create and configure the UIWindow intance
+    // A CGrext is a struch with an origin (x, y) and a size (width, height)
+    CGRect winFrame = [[UIScreen mainScreen] bounds];
+    UIWindow *theWindow = [[UIWindow alloc] initWithFrame:winFrame];
+    self.window = theWindow;
+    
+    // Define the frame rectangles of the three UI elements
+    // CGRectMake () create a CGRect from (x, y, width, height)
+    CGRect tableFrame = CGRectMake(0, 80, winFrame.size.width, winFrame.size.height -100);
+    CGRect fieldFrame = CGRectMake(20, 40, 200, 31);
+    CGRect buttonFrame = CGRectMake(228, 40, 72, 31);
+    
+    // Create and configure the UITableView instance
+    self.taskTable = [[UITableView alloc] initWithFrame:tableFrame
+                                                  style:UITableViewStylePlain];
+    self.taskTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // Tell the table view which class to instantiate whenever it
+    // Needs to create a new cell
+    [self.taskTable registerClass:[UITableViewCell class]
+           forCellReuseIdentifier:@"Cell"];
+    
+    // Create and confiuer the UITextField instance where new tasks will be entered
+    self.taskField = [[ UITextField alloc] initWithFrame:fieldFrame];
+    self.taskField.borderStyle = UITextBorderStyleRoundedRect;
+    self.taskField.placeholder = @"Type a task, tap Insert";
+    
+    // Create and configure the UIButton instance
+    self.insertButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.insertButton.frame = buttonFrame;
+    
+    // Give the button a title
+    [self.insertButton setTitle:@"Insert"
+                       forState:UIControlStateNormal];
+    
+    // Add our three new UI elements to the window
+    [self.window addSubview:self.taskTable];
+    [self.window addSubview:self.taskField];
+    [self.window addSubview:self.insertButton];
+    
+    //Finalize the window and put it on the screen
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

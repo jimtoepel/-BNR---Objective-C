@@ -10,9 +10,7 @@
 		B1F911121C1CEE5300AD47EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911111C1CEE5300AD47EE /* main.m */; };
 		B1F911151C1CEE5300AD47EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911141C1CEE5300AD47EE /* AppDelegate.m */; };
 		B1F911181C1CEE5300AD47EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911171C1CEE5300AD47EE /* ViewController.m */; };
-		B1F9111B1C1CEE5300AD47EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F911191C1CEE5300AD47EE /* Main.storyboard */; };
 		B1F9111D1C1CEE5300AD47EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F9111C1C1CEE5300AD47EE /* Assets.xcassets */; };
-		B1F911201C1CEE5300AD47EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F9111E1C1CEE5300AD47EE /* LaunchScreen.storyboard */; };
 		B1F9112B1C1CEE5300AD47EE /* iTahListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F9112A1C1CEE5300AD47EE /* iTahListTests.m */; };
 		B1F911361C1CEE5300AD47EE /* iTahListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F911351C1CEE5300AD47EE /* iTahListUITests.m */; };
 /* End PBXBuildFile section */
@@ -41,9 +39,7 @@
 		B1F911141C1CEE5300AD47EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B1F911161C1CEE5300AD47EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B1F911171C1CEE5300AD47EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B1F9111A1C1CEE5300AD47EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1F9111C1C1CEE5300AD47EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1F9111F1C1CEE5300AD47EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1F911211C1CEE5300AD47EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F911261C1CEE5300AD47EE /* iTahListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTahListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F9112A1C1CEE5300AD47EE /* iTahListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTahListTests.m; sourceTree = "<group>"; };
@@ -105,9 +101,7 @@
 				B1F911141C1CEE5300AD47EE /* AppDelegate.m */,
 				B1F911161C1CEE5300AD47EE /* ViewController.h */,
 				B1F911171C1CEE5300AD47EE /* ViewController.m */,
-				B1F911191C1CEE5300AD47EE /* Main.storyboard */,
 				B1F9111C1C1CEE5300AD47EE /* Assets.xcassets */,
-				B1F9111E1C1CEE5300AD47EE /* LaunchScreen.storyboard */,
 				B1F911211C1CEE5300AD47EE /* Info.plist */,
 				B1F911101C1CEE5300AD47EE /* Supporting Files */,
 			);
@@ -244,9 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F911201C1CEE5300AD47EE /* LaunchScreen.storyboard in Resources */,
 				B1F9111D1C1CEE5300AD47EE /* Assets.xcassets in Resources */,
-				B1F9111B1C1CEE5300AD47EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,25 +299,6 @@
 			targetProxy = B1F911321C1CEE5300AD47EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B1F911191C1CEE5300AD47EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1F9111A1C1CEE5300AD47EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B1F9111E1C1CEE5300AD47EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1F9111F1C1CEE5300AD47EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B1F911381C1CEE5300AD47EE /* Debug */ = {
@@ -499,6 +472,7 @@
 				B1F9113C1C1CEE5300AD47EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1F9113D1C1CEE5300AD47EE /* Build configuration list for PBXNativeTarget "iTahListTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +481,7 @@
 				B1F9113F1C1CEE5300AD47EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1F911401C1CEE5300AD47EE /* Build configuration list for PBXNativeTarget "iTahListUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +490,7 @@
 				B1F911421C1CEE5300AD47EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
