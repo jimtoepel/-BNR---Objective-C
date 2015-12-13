@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+#pragma mark - Set Up
+
 - (void)loadView
 {
     CGRect frame = [UIScreen mainScreen].bounds;
@@ -60,6 +62,9 @@
     self.view = backgroundView;
     
 }
+
+
+#pragma mark - Actions
 
 - (void)addTask:(id)sender
 {
