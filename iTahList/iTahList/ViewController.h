@@ -14,6 +14,9 @@
 @property (nonatomic) UITextField *taskField;
 @property (nonatomic) UIButton *insertButton;
 
+@property (nonatomic) NSMutableArray *tasks;
+
+
 - (void)addTask:(id)sender;
 
 @end

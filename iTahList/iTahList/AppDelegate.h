@@ -12,9 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic) NSMutableArray *tasks;
 
-- (void)addTask:(id)sender;
 
 
 @end
