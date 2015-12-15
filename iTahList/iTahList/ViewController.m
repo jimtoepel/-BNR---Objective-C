@@ -61,6 +61,8 @@
     
     self.view = backgroundView;
     
+    self.taskTable.dataSource = self;
+    
 }
 
 
