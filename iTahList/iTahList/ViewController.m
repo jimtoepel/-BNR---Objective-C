@@ -77,8 +77,9 @@
         return;
     }
     
-    // Log text to console
-    NSLog(@"Task entered: %@", text);
+    // Add it to the working array
+    [self.tasks addObject:text];
+    [self.taskTable reloadData];
     
     // Clear out the text field
     [self.taskField setText:@""];
