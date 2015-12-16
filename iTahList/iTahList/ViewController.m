@@ -19,6 +19,8 @@
 
 - (void)loadView
 {
+    self.tasks = [NSMutableArray array];
+    
     CGRect frame = [UIScreen mainScreen].bounds;
     MyView *backgroundView = [[MyView alloc] initWithFrame:frame];
     // Define frame rectangles
