@@ -9,6 +9,13 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+// Helper function to fetch the path
+NSString *FUNDocPath()
+{
+    NSArray *pathList = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [pathList[0] stringByAppendingPathComponent:@"data.td"];
+}
+
 @interface AppDelegate ()
 
 @end
@@ -39,6 +46,10 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // Sae the tasks array to disk
+//    [ViewController.tasks writeToFile:FUNDocPath() atomically:YES];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
