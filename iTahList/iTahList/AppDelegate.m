@@ -48,7 +48,9 @@ NSString *FUNDocPath()
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     // Sae the tasks array to disk
-//    [ViewController.tasks writeToFile:FUNDocPath() atomically:YES];
+    ViewController *mainController = (ViewController *)  self.window.rootViewController;
+    
+    [mainController.tasks writeToFile:FUNDocPath() atomically:YES];
     
 }
 

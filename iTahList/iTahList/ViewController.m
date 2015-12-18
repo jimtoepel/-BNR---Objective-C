@@ -89,6 +89,17 @@
     [self.taskField resignFirstResponder];
 }
 
+- (NSArray *)readTasks
+{
+    return self.tasks;
+}
+
+- (void)writeTasks:(NSArray *)newTasks
+{
+    self.tasks = [NSMutableArray arrayWithArray:newTasks];
+    
+}
+
 #pragma mark - Table View Setup
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

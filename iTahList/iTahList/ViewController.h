@@ -18,6 +18,8 @@
 
 
 - (void)addTask:(id)sender;
+- (NSArray *)readTasks;
+- (void)writeTasks:(NSArray*)newTasks;
 
 @end
 
