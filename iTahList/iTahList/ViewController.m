@@ -19,7 +19,8 @@
 
 - (void)loadView
 {
-    self.tasks = [NSMutableArray array];
+    
+    self.tasks = [[NSMutableArray alloc] init];
     
     CGRect frame = [UIScreen mainScreen].bounds;
     MyView *backgroundView = [[MyView alloc] initWithFrame:frame];
@@ -96,8 +97,16 @@
 
 - (void)writeTasks:(NSArray *)newTasks
 {
-    self.tasks = [NSMutableArray arrayWithArray:newTasks];
-    
+    NSArray *temp = [NSMutableArray arrayWithArray:newTasks];
+    if (temp)
+    {
+        // there is a dataset already, copy it to tasks
+        self.tasks = [temp mutableCopy];
+    } else {
+        // There is no dataset; create an empty array
+        self.tasks = [NSMutableArray array];
+    }
+    return;
 }
 
 #pragma mark - Table View Setup

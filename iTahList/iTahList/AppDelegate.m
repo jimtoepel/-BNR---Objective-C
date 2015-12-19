@@ -27,6 +27,12 @@ NSString *FUNDocPath()
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    ViewController *mainController = (ViewController *)  self.window.rootViewController;
+
+    NSArray *plist = [NSArray arrayWithContentsOfFile:FUNDocPath()];
+    [mainController writeTasks:plist];
+    
+    
     CGRect winFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame:winFrame];
     self.window.rootViewController = [[ViewController alloc] init];
