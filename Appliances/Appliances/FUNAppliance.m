@@ -10,6 +10,12 @@
 
 @implementation FUNAppliance
 
+- (instancetype)init
+{
+    return [self initWithProductName:@"Unknown"];
+}
+
+
 - (instancetype)initWithProductName:(NSString *)pn
 {
     // Call the objects init method
@@ -31,6 +37,10 @@
     return self;
 }
 
+- (NSString *) description
+{
+    return [NSString stringWithFormat:@"<%@: %d volts>", self.productName, self.voltage];
+}
 
 
 @end
