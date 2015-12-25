@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B13D555E1C27250500F331E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B13D555D1C27250500F331E3 /* main.m */; };
 		B13D55661C27680500F331E3 /* FUNAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = B13D55651C27680500F331E3 /* FUNAppliance.m */; };
+		B1FC49E01C2D028600B65E97 /* FUNOwnedAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC49DF1C2D028600B65E97 /* FUNOwnedAppliance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B13D555D1C27250500F331E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B13D55641C27680400F331E3 /* FUNAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNAppliance.h; sourceTree = "<group>"; };
 		B13D55651C27680500F331E3 /* FUNAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNAppliance.m; sourceTree = "<group>"; };
+		B1FC49DE1C2D028600B65E97 /* FUNOwnedAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNOwnedAppliance.h; sourceTree = "<group>"; };
+		B1FC49DF1C2D028600B65E97 /* FUNOwnedAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNOwnedAppliance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				B13D555D1C27250500F331E3 /* main.m */,
 				B13D55641C27680400F331E3 /* FUNAppliance.h */,
 				B13D55651C27680500F331E3 /* FUNAppliance.m */,
+				B1FC49DE1C2D028600B65E97 /* FUNOwnedAppliance.h */,
+				B1FC49DF1C2D028600B65E97 /* FUNOwnedAppliance.m */,
 			);
 			path = Appliances;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				B13D555E1C27250500F331E3 /* main.m in Sources */,
 				B13D55661C27680500F331E3 /* FUNAppliance.m in Sources */,
+				B1FC49E01C2D028600B65E97 /* FUNOwnedAppliance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +249,7 @@
 				B13D55631C27250500F331E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
