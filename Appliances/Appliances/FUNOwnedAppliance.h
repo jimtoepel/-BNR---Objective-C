@@ -10,6 +10,9 @@
 
 @interface FUNOwnedAppliance : FUNAppliance
 @property (readonly) NSSet *ownerNames;
+
+
+// The designated initializer
 -(instancetype)initWithProductName:(NSString *)pn
                     firstOwnerName:(NSString*)pn;
 -(void)addOwnerName:(NSString *)n;
