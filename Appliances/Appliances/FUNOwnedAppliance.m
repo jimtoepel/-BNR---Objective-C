@@ -52,4 +52,10 @@
     return [_ownerNames copy];
 }
 
+-(instancetype)initWithProductName:(NSString *)pn
+{
+    return [self initWithProductName:pn
+                      firstOwnerName:nil];
+}
+
 @end
