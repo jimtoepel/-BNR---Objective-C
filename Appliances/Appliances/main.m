@@ -15,9 +15,11 @@ int main(int argc, const char * argv[]) {
         FUNAppliance *a = [[FUNAppliance alloc] init];
         
         NSLog(@"a is %@", a);
-        [a setProductName:@"Washing Machine"];
+        [a setValue:@"Washing Machine" forKey:@"productName"];
         [a setVoltage:240];
         NSLog(@"a is %@", a);
+        
+        NSLog(@"the prouct name is %@", [a valueForKey:@"productName"]);
         
         
     }
