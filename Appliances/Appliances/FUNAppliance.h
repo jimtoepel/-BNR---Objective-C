@@ -10,7 +10,11 @@
 
 @interface FUNAppliance : NSObject
 
-@property (nonatomic, copy) NSString *productName;
+{
+    NSString *_productName;
+}
+
+//@property (nonatomic, copy) NSString *productName;
 @property (nonatomic) int voltage;
 
 // The designated initialier
