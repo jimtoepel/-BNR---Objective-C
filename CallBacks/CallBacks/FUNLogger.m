@@ -13,6 +13,12 @@
 
 @implementation FUNLogger
 
+
++ (NSSet *)keyPathsForValuesAffectingLastTimeString
+{
+    return [NSSet setWithObject:@"lastTime"];
+}
+
 - (void)zoneChange:(NSNotification *)note
 {
     NSLog(@"The system time zone has changed");
@@ -35,7 +41,9 @@
 - (void)updateLastTime:(NSTimer *)t
 {
     NSDate *now = [NSDate date];
-    [self setLastTime:now];
+    [self willChangeValueForKey:@"lastTime"];
+    _lastTime = now;
+    [self didChangeValueForKey:@"lastTime"];
     NSLog(@"Just set time to %@", self.lastTimeString);
 }
 

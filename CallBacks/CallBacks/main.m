@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FUNLogger.h"
+#import "FUNObserver.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -44,6 +45,14 @@ int main(int argc, const char * argv[]) {
                                                         selector:@selector (updateLastTime:)
                                                         userInfo:nil
                                                          repeats:YES];
+        
+        __unused FUNObserver *observer = [[FUNObserver alloc] init];
+        
+        // I want to know the new value and the old value whenever lastTime is changed
+        [logger addObserver:observer
+                 forKeyPath:@"lastTimeString"
+                    options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                    context:nil];
         
         
         [[NSRunLoop currentRunLoop] run];

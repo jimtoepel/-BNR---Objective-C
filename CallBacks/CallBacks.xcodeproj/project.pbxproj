@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12D56291C320762002893C7 /* FUNObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D56281C320762002893C7 /* FUNObserver.m */; };
 		B17973681C0D493D001B4523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B17973671C0D493D001B4523 /* main.m */; };
 		B17973701C0D4981001B4523 /* FUNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B179736F1C0D4981001B4523 /* FUNLogger.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B12D56271C320762002893C7 /* FUNObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNObserver.h; sourceTree = "<group>"; };
+		B12D56281C320762002893C7 /* FUNObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNObserver.m; sourceTree = "<group>"; };
 		B17973641C0D493D001B4523 /* CallBacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CallBacks; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17973671C0D493D001B4523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B179736E1C0D4981001B4523 /* FUNLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNLogger.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 			children = (
 				B179736E1C0D4981001B4523 /* FUNLogger.h */,
 				B179736F1C0D4981001B4523 /* FUNLogger.m */,
+				B12D56271C320762002893C7 /* FUNObserver.h */,
+				B12D56281C320762002893C7 /* FUNObserver.m */,
 				B17973671C0D493D001B4523 /* main.m */,
 			);
 			path = CallBacks;
@@ -125,6 +130,7 @@
 			files = (
 				B17973681C0D493D001B4523 /* main.m in Sources */,
 				B17973701C0D4981001B4523 /* FUNLogger.m in Sources */,
+				B12D56291C320762002893C7 /* FUNObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +249,7 @@
 				B179736D1C0D493D001B4523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
