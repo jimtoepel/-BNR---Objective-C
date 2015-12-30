@@ -11,8 +11,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        NSDate *midnight = [NSDate fun_ezDateFromDay:18 month:2 andYear:1982];
+        
+        NSLog(@"the date is: %@", [midnight descriptionWithLocale:NSLocaleCalendar]);
+        
+        
     }
     return 0;
 }

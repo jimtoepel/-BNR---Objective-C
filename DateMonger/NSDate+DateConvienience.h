@@ -10,4 +10,8 @@
 
 @interface NSDate (DateConvienience)
 
++ (NSDate*)fun_ezDateFromDay:(int)d
+                       month:(int)m
+                     andYear:(int)y;
+
 @end
