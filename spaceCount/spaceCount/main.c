@@ -7,9 +7,26 @@
 //
 
 #include <stdio.h>
+#include <string.h>
+
+int spaceCount(const char *string) {
+ 
+    char space = 0x20; // x20 is "space"
+    uint16_t len = strlen(string);
+    int sum = 0;
+    for (int i = 0; i < len; i++) {
+        if (string[i] == space) {
+            sum++;
+        }
+    }
+    return sum;
+}
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+
+    const char *sentence = "He was not in the cab at the time.";
+    printf("\"%s\" has %d spaces \n", sentence, spaceCount(sentence));
+    
     return 0;
 }
