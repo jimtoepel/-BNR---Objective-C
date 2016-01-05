@@ -20,34 +20,21 @@ int main(int argc, const char * argv[]) {
     }
     
     // Get a point to 5 bytes of memory on the heap
-    char *start = malloc(5);
-    
-    // pull 'L' in the first byte
-    *start = 'L';
-    
-    // put 'o' in the second byte
-    *(start + 1) = 'o';
-    
-    // and so on
-    *(start + 2) = 'v';
-    *(start + 3) = 'e';
-    
-    // Then end it
-    *(start + 4) = '\0';
+    const char *start = "A backslash after two newlines and a tab:\n\n\t\\";
+
     
     //Print out the string and its length
     printf("%s has %zu characters\n", start, strlen(start));
     
     // 3rd letter?
-    printf("The third letter is %c\n", *(start + 2));
+    printf("The third letter is %c\n", start[2]);
     
-    
-    // Free the memory so that it can be reused
-    free(start);
-    start = NULL;
+
     
     return 0;
 }
+
+
 
 /*
 
